@@ -9,11 +9,13 @@ const KEY_BOARD_SPECIAL_KEYS = ["Backspace", " "];
 
 let text = "";
 
+/* TODO: How can I have the same behavior with mouse click? */
 const setUp = () => {
   addKeyBoardUI();
   addKeyPressHandler();
 };
 
+/* TODO: Bugfix: Back space is not working? */
 const addKeyPressHandler = () => {
   document.onkeydown = keyDownHandler;
   document.onkeyup = keyUpHandler;
@@ -52,6 +54,7 @@ const keyUpHandler = (event) => {
 };
 
 const addKeyBoardUI = () => {
+  const HORIZONTAL_SPACE = 40;
   const leftSideContainer = document.getElementById("left-sid");
   if (!leftSideContainer) return;
 
@@ -64,18 +67,21 @@ const addKeyBoardUI = () => {
 
       let left = "";
       let top = "";
+
+      /* REFACTOR: Can we improve this conditional statement? */
+
       if (!rowIndex) {
         top = "30%";
-        left = `${100 + columnIndex * 40}px`;
+        left = `${100 + columnIndex * HORIZONTAL_SPACE}px`;
       } else if (rowIndex === 1) {
         top = "35%";
-        left = `${150 + columnIndex * 40}px`;
+        left = `${150 + columnIndex * HORIZONTAL_SPACE}px`;
       } else if (rowIndex === 2) {
         top = "40%";
-        left = `${200 + columnIndex * 40}px`;
+        left = `${200 + columnIndex * HORIZONTAL_SPACE}px`;
       } else {
         top = "45%";
-        left = `${250 + columnIndex * 40}px`;
+        left = `${250 + columnIndex * HORIZONTAL_SPACE}px`;
       }
 
       div.style.top = top;
