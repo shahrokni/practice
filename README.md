@@ -65,5 +65,26 @@ Be more curious!
 
 - What are `p` or `div` in the HTML file?
 - What other tags do we have in the HTML world?
-- Why can't I use `div` instead of `p` any clue?
+- Why can't I use `div` instead of `p`, if I can use them interchangeably? any clue?
 - What is `id`? Why is it important? (You can take a look at the JS and CSS files)
+- Should I know all the tags in the world? (No)
+
+# CSS
+
+- Element, id, and Classes
+- Fixed-size instead of dynamic size
+- Why it may give you a headache (differed styles from different points)
+- Why it may give you a headache (The effect of higher elements)
+- Can it be optimized to avoid redundancy? (Yes but be careful)
+- Children play with CSS, but only big boys comprehend it!
+- May take years to become a CSS master!
+- These days pure css is rarely used. For example, here we use something called styled-component. (You can contribute now!)
+
+# Task 4
+
+- Try to understand the flow of the JS file. Can you explain it?
+- Where should I call `setUp` function? Does it really matter?
+- Let's discuss setUp, addKeyBoardUI
+- Try to find out how my app is sensitive to keyboard key-press. addKeyPressHandler
+- Solve the bug (Backspace)
+- Add a feature (Mouse click)

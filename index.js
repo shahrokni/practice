@@ -68,7 +68,7 @@ const addKeyBoardUI = () => {
       let left = "";
       let top = "";
 
-      /* REFACTOR: Can we improve this conditional statement? */
+      /* REFACTOR: Can we improve this conditional statement? :) */
 
       if (!rowIndex) {
         top = "30%";
